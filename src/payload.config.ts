@@ -9,6 +9,12 @@ import sharp from 'sharp'
 
 import { Users } from './collections/Users'
 import { Media } from './collections/Media'
+import { Headers } from './collections/Headers'
+import { Projects } from './collections/Projects'
+import { Experience } from './collections/Experience'
+import { About } from './collections/About'
+import { SocialLinks } from './collections/SocialLinks'
+import { Footer } from './collections/Footer'
 
 const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
@@ -20,8 +26,9 @@ export default buildConfig({
       baseDir: path.resolve(dirname),
     },
   },
-  collections: [Users, Media],
-  editor: lexicalEditor(),
+  cors: '*',
+  collections: [Users, Media, Headers, Projects, Experience, About, SocialLinks, Footer],
+  editor: lexicalEditor({}),
   secret: process.env.PAYLOAD_SECRET || '',
   typescript: {
     outputFile: path.resolve(dirname, 'payload-types.ts'),
