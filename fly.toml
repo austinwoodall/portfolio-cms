@@ -1,9 +1,9 @@
-# fly.toml app configuration file generated for portfolio-cms-wandering-brook-107 on 2024-12-25T15:20:29-06:00
+# fly.toml app configuration file generated for portfolio-cms-weathered-butterfly-6479 on 2024-12-25T16:09:10-06:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'portfolio-cms-wandering-brook-107'
+app = 'portfolio-cms-weathered-butterfly-6479'
 primary_region = 'ord'
 
 [build]
